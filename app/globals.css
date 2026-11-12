@@ -4,13 +4,93 @@
 
 body {
   margin: 0;
-  padding: 2rem;
-  color: #171717;
-  background: #fff;
+  min-height: 100vh;
+  color: #16332f;
+  background: #f3f7f5;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
-  max-width: 40rem;
-  margin: 4rem auto;
+.page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 2rem 1.25rem;
+}
+
+.monitor-card {
+  width: min(100%, 42rem);
+  padding: clamp(1.5rem, 5vw, 3rem);
+  border: 1px solid #dce8e2;
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: 0 1.5rem 4rem rgb(22 51 47 / 8%);
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  color: #16866d;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 2.75rem);
+  letter-spacing: -0.045em;
+}
+
+.description {
+  max-width: 34rem;
+  margin: 1rem 0 2rem;
+  color: #5b706b;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.service-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.service {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #e4ede8;
+  border-radius: 0.75rem;
+  background: #fbfdfc;
+}
+
+.service-name {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.service a {
+  overflow-wrap: anywhere;
+  color: #147c66;
+  font-size: 0.9rem;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.interval {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 1.5rem 0 0;
+  color: #5b706b;
+  font-size: 0.9rem;
+}
+
+.interval strong {
+  color: #16332f;
+}
+
+.status-dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: #1ca57d;
 }

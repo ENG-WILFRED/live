@@ -1,8 +1,8 @@
 services:
-  - type: cron
+  - type: web
     name: service-keep-alive
     runtime: node
-    plan: starter
-    schedule: "*/10 * * * *"
+    plan: free
     buildCommand: npm ci && npm run build
-    startCommand: npm run keep-alive
+    startCommand: npm run start
+    healthCheckPath: /
