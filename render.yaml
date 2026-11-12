@@ -1,0 +1,8 @@
+services:
+  - type: cron
+    name: service-keep-alive
+    runtime: node
+    plan: starter
+    schedule: "*/10 * * * *"
+    buildCommand: npm ci && npm run build
+    startCommand: npm run keep-alive
